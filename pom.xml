@@ -38,6 +38,10 @@
 
 	<repositories>
 		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+		<repository>
 			<id>central</id>
 			<!-- This should be at top, it makes maven try the central repo first 
 				and then others and hence faster dep resolution -->
@@ -59,6 +63,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.github.matfax</groupId>
+			<artifactId>archery</artifactId>
+			<version>v0.4.0</version>
+		</dependency>
+		<dependency>
 			<groupId>org.scala-lang</groupId>
 			<artifactId>scala-library</artifactId>
 			<version>${scala.version}</version>
@@ -67,11 +76,6 @@
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-mllib_${scala.binary.version}</artifactId>
 			<version>${spark.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.meetup</groupId>
-			<artifactId>archery_${scala.binary.version}</artifactId>
-			<version>0.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.scalatest</groupId>

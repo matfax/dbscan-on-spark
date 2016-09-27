@@ -16,9 +16,9 @@
  */
 package org.apache.spark.mllib.clustering.dbscan
 
-import scala.annotation.tailrec
+import org.apache.spark.internal.Logging
 
-import org.apache.spark.Logging
+import scala.annotation.tailrec
 
 /**
  * Helper methods for calling the partitioner
